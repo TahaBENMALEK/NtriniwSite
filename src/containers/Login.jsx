@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import './Login.css'
-import { FaUser } from "react-icons/fa";
-import user_icon from '../Assets/person.png'
-import email_icon from '../Assets/email.png'
-import password_icon from '../Assets/password.png'
+import { FaUserAlt, FaLock,  } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Testi = () => {
 
@@ -18,16 +16,16 @@ const Testi = () => {
       <div className="inputs">
         {action === "Login" ? null : (
           <div className="input">
-            <img src={user_icon} alt="Icon" className="icon" />
-            <input type="text" placeholder="Name" />
+            <FaUserAlt alt="Icon" className="icon"/>
+            <input type="Text" placeholder="User name" />
           </div>
         )}
         <div className="input">
-          <img src={email_icon} alt="Icon" className="icon" />
-          <input type="email" placeholder="Email" />
+           < MdEmail alt="Icon" className="icon" />
+           <input type="email" placeholder="Email" />
         </div>
         <div className="input">
-          <img src={password_icon} alt="Icon" className="icon" />
+          <FaLock alt="Icon" className="icon" />
           <input type="password" placeholder="Password" />
         </div>
         <div className="forgot-password">
